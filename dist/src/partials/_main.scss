@@ -1,0 +1,142 @@
+// --------------- GENERAL ---------------
+
+.container {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// --------------- MOBILE ---------------
+
+
+
+
+
+
+
+// --------------- DESKTOP ---------------
+
+// --- START WEB
+
+@media screen and (min-width: 769px) {
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.7;
+        z-index: 1;
+        filter: grayscale(100%);
+    }
+    
+    video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        filter: grayscale(100%);
+        opacity: 0.5;
+    }
+    
+    .zoom-in-hov {
+        transition: transform .2s; /* Animation */
+    }
+    
+    .zoom-in-hov:hover {
+        transform: scale(1.1);
+        transition: ease-in-out 0.5s;
+    }
+    
+    .start-logo {
+        position: relative;
+        width: 30%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 100px;
+        cursor: pointer;
+    }
+//--- 
+//----------INDEX HTML
+
+    section {
+        height: 100vh;
+        position: relative;
+
+    }
+    
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    
+//---------- SECTION HOME
+
+    .section-home {
+        background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+    }
+    
+//--- CAROUSEL
+
+    // .section-home {
+    //     margin-top: 1vh;
+    // }
+
+    .section-home img {
+        width: auto;
+        // margin-left: -20px;
+    }
+
+    #prevBtn {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        left: 5%;
+        width: 30px;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    #nextBtn {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        right: 5%;
+        width: 30px;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    .carousel-container {
+        width: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel-content {
+        display: flex;
+        width: 100%;
+        height: 83.33vh;
+    }
+
+//---------- SECTION VIDEOS
+
+    .section-videos {
+        background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+    }
+    
+}
+

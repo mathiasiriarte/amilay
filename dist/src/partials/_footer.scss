@@ -1,0 +1,45 @@
+footer {
+    background: #000000e6;
+    border-bottom: 5px solid #c0a964;
+
+}
+
+.start-footer {
+    z-index: 1;
+    position: relative;
+    margin-top: 7.3%;
+    background: #0000009e;
+}
+
+.containerFooter p{
+    text-align: center;
+}
+
+.footerFlexbox ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-inline-start: 0px;
+}
+
+@media screen and (min-width: 769px) {
+
+    .containerFooter {
+        display: flex;
+    }
+
+    footer .containerFooter {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -4px;
+    }
+
+    .fab {
+        padding-right: 36px;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+
+}
