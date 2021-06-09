@@ -3,6 +3,19 @@
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+}
+
+body {
+  background-color: white;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body span, body a {
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
 }
 
 html, body {
@@ -192,7 +205,7 @@ h1 {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -214,9 +227,25 @@ h1 {
     -webkit-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
   }
-  .start-logo {
+  .button-container {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     position: relative;
-    width: 30%;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+  }
+  .button-container .enter-button {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #bf9b30;
+    background: none;
+    border: 1px solid #ffffff00;
+    width: 10.61vw;
+    min-height: 10.65vh;
+    position: relative;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -230,6 +259,51 @@ h1 {
     margin: 0 auto;
     margin-top: 100px;
     cursor: pointer;
+  }
+  .button-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #bf9b30;
+    border-bottom-color: #bf9b30;
+    -webkit-transform: scale(0.1, 1);
+            transform: scale(0.1, 1);
+  }
+  .button-container:hover span {
+    letter-spacing: 2px;
+  }
+  .button-container:hover::before {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  .button-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: none;
+  }
+  .button-container:hover::after {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 1);
+            transform: scale(0.1, 1);
   }
   section {
     height: 100vh;

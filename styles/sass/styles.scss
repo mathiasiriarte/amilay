@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: background-color 1s ease-in-out;
+}
+
+body {
+    background-color: white;
+    // &.dark {
+    //     background-color:#37383C;
+    // }
+    h1, h2, h3, h4, h5, h6, p, span, a {
+        transition: color 1s ease-in-out;
+    }
+}
+
+@import 'mixins';
+@import 'variables';
+@import 'helpers';
+
+@import 'body';
+@import 'header';
+@import 'main';
+@import 'footer';
+// @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
