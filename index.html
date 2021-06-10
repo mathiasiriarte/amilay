@@ -11,7 +11,28 @@
     <!-- font-family: 'Merriweather', serif; bold 700
     font-family: 'Open Sans', sans-serif; regular 400, bold 700 -->
 </head>
-<body class="start">
+<body class="custom-scrollbar start">
+    <header class="hidden fixed">
+        <div class="container">
+            <div class="logo-container">
+                <h1>AMILAY</h1>
+            </div>
+            <nav>
+                <div class="nav-container">
+                    <input type="checkbox" id="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="navigation list">
+                        <li class="nav-item fx-hov"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+                        <li class="nav-item fx-hov"><a class="nav-link js-scroll-trigger" href="#videos">Videos</a></li>
+                        <li class="nav-item fx-hov"><a class="nav-link js-scroll-trigger" href="#store">Store</a></li>
+                        <li class="nav-item fx-hov"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>  
+        </div>
+    </header>
     <main>
         <div>
                 <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -22,6 +43,35 @@
         <div class="button-container">
             <a href="/main.html"><button class="enter-button">ENTER WEBSITE</button></a>
         </div>
+        <!-- <section id="home" class="section-home fade-in">
+            <div class="container">
+                <div class="carousel-container">
+                    <div id="carouselContent" class="carousel-content">
+                        <img src="assets/img/amilay_4.jpg" id="lastClone" alt="amilay_studio">
+                        <img src="assets/img/amilay_1.jpg" alt="amilay_yamila">
+                        <img src="assets/img/amilay_2.jpeg" alt="amilay_top">
+                        <img src="assets/img/amilay_3.jpg" alt="amilay_mathias">
+                        <img src="assets/img/amilay_4.jpg" alt="amilay_studio">
+                        <img src="assets/img/amilay_1.jpg" id="firstClone" alt="amilay_yamila">
+                    </div>
+                </div>
+                <button id="prevBtn">prev</button>
+                <button id="nextBtn">next</button>
+            </div>
+        </section>
+        <section id="videos" class="section-videos fade-in">
+            <h2>Videos</h2>
+            <div class="container ytb-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9tNYZH5zQDU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-embed"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-nVKAuM4v-k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-embed"></iframe>
+            </div>
+        </section>
+        <section id="store" class="section-store fade-in">
+            
+        </section>
+        <section id="contact" class="section-contact fade-in">
+            
+        </section> -->
     </main>
     <footer class="start-footer">
         <div class="container containerFooter">
